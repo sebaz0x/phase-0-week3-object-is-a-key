@@ -1,5 +1,14 @@
 function changeMe(arr) {
-  // you can only write your code here!
+    arr.forEach((data, index) => {
+    let objek = {
+        firstName: data[0],
+        lastName: data[1],
+        gender: data[2],
+        age: (data[3] === undefined) ? 'invalid birth year' : 2026 - data[3]
+    };
+    console.log(`${index + 1}. ${data[0]} ${data[1]}:`);
+    console.log(objek)  
+    });
 }
 
 // TEST CASES
